@@ -17,6 +17,7 @@ const Tictactoe = () => {
     const newBoard = [...board];
     newBoard[index] = count % 2 === 0 ? "x" : "o";
     setBoard(newBoard);
+    
     setCount(count + 1);
     checkWin(newBoard);
   };
